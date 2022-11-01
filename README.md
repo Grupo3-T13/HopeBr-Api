@@ -21,7 +21,7 @@ EX: {
     "contact": 53234
 }
 
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
+ Os campos obrigatórios são os de email e password.
 Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
 
 
@@ -34,7 +34,6 @@ POST /login <br/>
 }
 
 
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
 
 ### ROTAS QUE NECESSITAM DE AUTORIZAÇÃO!
 
