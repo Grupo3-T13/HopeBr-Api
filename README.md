@@ -12,8 +12,14 @@ Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/pack
 ### Cadastro
 
 POST /register <br/>
-POST /signup <br/>
-POST /users
+{
+    "name": "João Pedro",
+    "email": "jotape@gmail.com",
+    "password": "1234567",
+    "state": "Rio De janeiro",
+    "city": "Rio De Janeiro",
+    "contact": 53234
+}
 
 Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
 Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
@@ -22,11 +28,18 @@ Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do
 ### Login
 
 POST /login <br/>
-POST /signin
+{
+	"email": "jotape@gmail.com",
+	"password":"1234567"
+}
+
 
 Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
 
 ### ROTAS QUE NECESSITAM DE AUTORIZAÇÃO!
+
+### GET
+
 
  ### Listar Todos os Usuarios/Posts/Donations:
 
@@ -43,6 +56,32 @@ GET /users/id?_embed=donations&_embed=posts - RETORNA UM USUARIO ESPECIFICO
 GET /donations/id?_expand=user - RETORNA UMA DOAÇÃO ESPECIFICA
 
 GET /posts/id?_expand=user - RETORNA UM POST ESPECIFICO
+
+
+### POST 
+
+### CRIAR POSTS
+
+POST /posts 
+{
+ title: "Preciso de uma Geladeira"
+ content: "Um deslizamento ocorreu na minha casa"
+}
+
+### CRIAR DOAÇÕES 
+
+
+ POST:/donations
+
+{
+	name: ""
+	description: ""
+	category: ""
+	donated: true/false
+	userId: 
+}
+
+
 
 
 
