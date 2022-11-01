@@ -12,7 +12,7 @@ Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/pack
 ### Cadastro
 
 POST /register <br/>
-{
+EX: {
     "name": "João Pedro",
     "email": "jotape@gmail.com",
     "password": "1234567",
@@ -63,7 +63,7 @@ GET /posts/id?_expand=user - RETORNA UM POST ESPECIFICO
 ### CRIAR POSTS
 
 POST /posts 
-{
+EX: {
  title: "Preciso de uma Geladeira"
  content: "Um deslizamento ocorreu na minha casa"
 }
@@ -73,7 +73,7 @@ POST /posts
 
  POST:/donations
 
-{
+EX:{
 	name: ""
 	description: ""
 	category: ""
