@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "email": "kenzinho@mail.com",
+      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
+      "name": "Kenzinho",
+      "age": 38,
+      "id": 1
+    },
+    {
+      "email": "jotape@gmail.com",
+      "password": "$2a$10$ToP0MiSEyDOXyl9Xjx11mOSd8f9xYK6UzrVbFWe3VDwi29ons8ovm",
+      "id": 2,
+      "name": "João Pedro",
+      "estado": "Rio de janeiro",
+      "state": "Rio De janeiro",
+      "city": "Rio De Janeiro",
+      "contact": 53234
+    },
+    {
+      "email": "igor@gmail.com",
+      "password": "$2a$10$c.2gvd3fH7goHUNluIYS4OLMIVdr6/aYBN32NNKYGcuS.LsypkSeC",
+      "id": 3,
+      "name": "Igor Dias",
+      "estado": "Minas Gerais"
+    }
+  ],
+  "donations": [
+    {
+      "name": "Geladeira",
+      "description": "Eletrodoméstico",
+      "donated": "false",
+      "userId": 3,
+      "id": 1
+    },
+    {
+      "name": "PS5",
+      "description": "Video Game",
+      "donated": "false",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "XBOX",
+      "description": "Video Game",
+      "donated": "false",
+      "userId": 2,
+      "id": 3,
+      "category": "Video Game"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Preciso de uma geladeira",
+      "content": "Ocorreu um deslizamento na minha casa",
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "title": "Preciso de uma geladeira",
+      "content": "Ocorreu um deslizamento na minha casa",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "title": "Preciso de um livro para meu vestibular",
+      "content": "Estou sem dinheiro para comprar o livro",
+      "userId": 2,
+      "id": 3
+    }
+  ]
+}
