@@ -13,12 +13,12 @@ Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/pack
 
 POST /register <br/>
 EX: {
-    "name": "João Pedro",
-    "email": "jotape@gmail.com",
-    "password": "1234567",
-    "state": "Rio De janeiro",
-    "city": "Rio De Janeiro",
-    "contact": 53234
+    "name": "João Pedro", - string
+    "email": "jotape@gmail.com", - string
+    "password": "1234567", - string
+    "state": "Rio De janeiro", - string
+    "city": "Rio De Janeiro", - string
+    "contact": 53234 - number/string
 }
 
  Os campos obrigatórios são os de email e password.
@@ -29,8 +29,8 @@ Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do
 
 POST /login <br/>
 {
-	"email": "jotape@gmail.com",
-	"password":"1234567"
+	"email": "jotape@gmail.com", - string
+	"password":"1234567" - string
 }
 
 
@@ -63,9 +63,9 @@ GET /posts/id?_expand=user - RETORNA UM POST ESPECIFICO
 
 POST /posts 
 EX: {
- title: "Preciso de uma Geladeira"
- content: "Um deslizamento ocorreu na minha casa"
-}
+ title: "Preciso de uma Geladeira" - string
+ content: "Um deslizamento ocorreu na minha casa" - string
+ }
 
 ### CRIAR DOAÇÕES 
 
@@ -73,14 +73,23 @@ EX: {
  POST:/donations
 
 EX:{
-	name: ""
-	description: ""
-	category: ""
-	donated: true/false
-	userId: 
+	name: "" - string
+	description: "" - string
+	category: "" - string
+	donated: true/false - boolean
+	userId:  - number
 }
 
 
+### EDIT 
+
+PATCH /posts/id === EDITA UM POST ESPECIFICO
+PATCH /donations/id === EDITA UM DONATION ESPECIFICO
+
+### DELETE
+
+DELETE /posts/id === DELETA UM POST ESPECIFICO
+DELETE /donations/id === DELETA UMA DOAÇÃO ESPECIFICA
 
 
 
